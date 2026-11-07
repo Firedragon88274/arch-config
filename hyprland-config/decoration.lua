@@ -30,3 +30,7 @@ hl.config({
 		rounding = 25,
 	},
 })
+hl.config({
+	["decoration.wobble.enabled"] = true,
+	["decoration.wobble.intensity"] = 1,
+})

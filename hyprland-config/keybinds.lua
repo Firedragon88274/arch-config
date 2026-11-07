@@ -192,6 +192,7 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 5%-"), { loc
 hl.bind("SUPER + W", hl.dsp.exec_cmd("~/bin/wallpaper-picker.sh"))
 
 hl.bind("SUPER + X", hl.dsp.exec_cmd("~/.config/hypr/hyprland-config/scripts/cmdbar.sh"))
+hl.bind("SUPER + S", hl.dsp.exec_cmd("~/.config/hypr/hyprland-config/scripts/queuelauncher/queuelauncher.sh"))
 
 hl.bind("SUPER + C", hl.dsp.exec_cmd("~/.config/hypr/hyprland-config/scripts/ledcolor.sh"))
 

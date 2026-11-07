@@ -14,7 +14,7 @@
 
 local terminal = "KITTY_LISTEN_ON=unix:/tmp/kitty.sock kitty --title Kitty"
 
-local fileManager = "nautilus"
+local fileManager = "thunar"
 
 local menu = "wofi --show drun"
 

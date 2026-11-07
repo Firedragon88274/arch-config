@@ -13,21 +13,21 @@
 -- These animations are designed to be soft. You can edit the values however you want.
 
 hl.config({
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 })
 hl.curve("softEase", {
-    type = "bezier",
-    points = { { 0.33, 1 }, { 0.68, 1 } },
+	type = "bezier",
+	points = { { 0.33, 1 }, { 0.68, 1 } },
 })
 hl.curve("smooth", {
-    type = "bezier",
-    points = { { 0.4, 0 }, { 0.2, 1 } },
+	type = "bezier",
+	points = { { 0.4, 0 }, { 0.2, 1 } },
 })
 hl.curve("gentle", {
-    type = "bezier",
-    points = { { 0.25, 0.1 }, { 0.25, 1 } },
+	type = "bezier",
+	points = { { 0.25, 0.1 }, { 0.25, 1 } },
 })
 hl.animation({ leaf = "global", enabled = true, speed = 8, bezier = "default" })
 hl.animation({ leaf = "windows", enabled = true, speed = 3.5, bezier = "smooth" })

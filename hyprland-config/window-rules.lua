@@ -13,33 +13,35 @@
 -- Define your window rules.
 
 hl.window_rule({
-    name  = "suppress-maximize-events",
-    match = {
-        class = ".*",
-    },
-    suppress_event = "maximize",
+	name = "suppress-maximize-events",
+	match = {
+		class = ".*",
+	},
+	suppress_event = "maximize",
+	no_wobble = false,
 })
 
 hl.window_rule({
-    name  = "fix-xwayland-drags",
-    match = {
-        class = "^$",
-        title = "^$",
-        xwayland = true,
-        float = true,
-        fullscreen = false,
-        pin = false,
-    },
-    no_focus = true,
+	name = "fix-xwayland-drags",
+	match = {
+		class = "^$",
+		title = "^$",
+		xwayland = true,
+		float = true,
+		fullscreen = false,
+		pin = false,
+	},
+	no_focus = true,
 })
 
 hl.window_rule({
-    name  = "move-hyprland-run",
-    match = {
-        class = "hyprland-run",
-    },
-    float = true,
-    move = { 20, "monitor_h-120" },
+	name = "move-hyprland-run",
+	match = {
+		class = "hyprland-run",
+	},
+	float = true,
+	move = { 20, "monitor_h-120" },
+	no_wobble = false,
 })
 
 -- Feel free to delete this. This is for hypridle to not go idle when Zen Browser is working.
@@ -47,9 +49,9 @@ hl.window_rule({
 -- Just a random preference of mine.
 
 hl.window_rule({
-    name  = "keep-zen-awake",
-    match = {
-        class = "zen.*",
-    },
-    idle_inhibit = "fullscreen",
+	name = "keep-zen-awake",
+	match = {
+		class = "zen.*",
+	},
+	idle_inhibit = "fullscreen",
 })
